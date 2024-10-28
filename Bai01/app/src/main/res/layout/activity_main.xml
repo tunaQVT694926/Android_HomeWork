@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextSource"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/hint_enter_amount"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:autofillHints="transactionAmount"
+        android:maxWidth="300dp" />
+
+    <Spinner
+        android:id="@+id/spinnerSourceCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextTarget"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:enabled="false"
+        android:hint="@string/hint_converted_amount"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:autofillHints="transactionAmount"
+        android:maxWidth="300dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTargetCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp" />
+</LinearLayout>
